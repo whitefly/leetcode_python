@@ -9,6 +9,7 @@ class Solution:
         一旦出现其他情况,就要大小来调整切的位置(二分)
         复杂度: 只在最小数组上进行二分--->O(log(min(m+n)))
         """
+        # 确定最小数组
         left, right, nums_small, nums_big = (0, len(nums1), nums1, nums2) if len(nums1) <= len(nums2) else (
             0, len(nums2), nums2, nums1)
         size = len(nums1) + len(nums2)
@@ -21,7 +22,7 @@ class Solution:
             R1 = 99999999 if cut1 == len(nums_small) else nums_small[cut1]
             L2 = -99999999 if cut2 == 0 else nums_big[cut2 - 1]
             R2 = 99999999 if cut2 == len(nums_big) else nums_big[cut2]
-
+            # 二分来求出正确切点
             if L1 > R2:
                 right = cut1 - 1
             elif L2 > R1:
