@@ -5,3 +5,4 @@
 .idea/modules.xml
 .idea/workspace.xml
 venv/
+/test.py
