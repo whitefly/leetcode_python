@@ -12,6 +12,7 @@ class Solution:
         :type l2: ListNode
         :rtype: ListNode
         思入: 使用指针扫2个链表. 创建第三条链,每比较一次,创建一个新节点拼接
+        思考:可不可以不使用额外空间,而完成这题?
         """
         result = ListNode(0)
         index3 = result
