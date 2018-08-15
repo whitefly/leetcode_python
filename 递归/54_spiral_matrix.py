@@ -12,7 +12,7 @@ class Solution:
     def hehe(self, matrix, position):
         m, n = len(matrix) - 1, len(matrix[0]) - 1
         x, y = position
-        # 对角元素
+        # 4个角点
         x_, y_ = m - x, n - y
         if x > x_ or y > y_:
             return []
@@ -33,11 +33,37 @@ class Solution1:
         """
         :param matrix:
         :return:
-        思入:非递归写法
+        思入:非递归写法. 使用循环来确定4个点. 将单纯的横看做上, 将单纯的竖看做 上+右
         """
+        if not matrix:
+            return matrix
+        # 四个角点
+        row_begin, row_end = 0, len(matrix) - 1
+        col_begin, col_end = 0, len(matrix[0]) - 1
+        result = []
+        while row_begin <= row_end and col_begin <= col_end:
+            # 上
+            result.extend(matrix[row_begin][col_begin:col_end + 1])
+            # 右
+            if row_begin < row_end:
+                result.extend([matrix[i][col_end] for i in range(row_begin + 1, row_end + 1)])
+                if col_begin < col_end:
+                    # 下
+                    result.extend(matrix[row_end][col_end - 1:col_begin:-1])
+                    # 左
+                    result.extend([matrix[i][col_begin] for i in range(row_end, row_begin, -1)])
+            row_begin += 1
+            row_end -= 1
+            col_begin += 1
+            col_end -= 1
+        return result
 
 
 if __name__ == '__main__':
-    a = [[6, 9, 7]]
-    s = Solution()
+    a = [
+        [1, 2, 3, 4],
+        [5, 6, 7, 8],
+        [9, 10, 11, 12]
+    ]
+    s = Solution1()
     print(s.spiralOrder(a))
