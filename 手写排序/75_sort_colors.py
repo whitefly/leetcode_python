@@ -29,7 +29,7 @@ class Solution2:
     def sortColors(self, nums):
         """
         思入2: 由于只扫一遍,故一遍就需要将位置摆放正确. 就需要交换2个位置,所以需要2个指针. 自然想到双指针
-        双指针变动: 0,2时缩小范围. 当都扫到1时,使用第三个指针. 左指针用来存0的坑,右指针用来存2的坑
+        双指针想法: 左指针作为0的坑,右指针作为2的坑. 一个index作为遍历指针.
         """
         l, r = 0, len(nums) - 1
         index = 0
@@ -40,7 +40,7 @@ class Solution2:
                 index += 1
             elif nums[index] == 2:
                 nums[index], nums[r] = nums[r], nums[index]
-                r -= 1
+                r -= 1  # 会将被扫到的元素换到index位置,所以此时不能将 index++
             else:
                 index += 1
 
