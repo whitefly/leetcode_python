@@ -41,6 +41,26 @@ class Solution2(object):
             return False
 
 
+class Solution3(object):
+    def hasCycle(self, head):
+        """
+        思入3:对思入2进行简化,不使用try..except,仅仅对fast指针来判断即可:
+        核心:faster.next.next faster.next可能为null
+        :param head:
+        :return:
+        """
+        if not head or not head.next:
+            return False
+        lower = head
+        faster = head.next
+        while lower != faster:
+            if not faster or not faster.next:
+                return False
+            faster = faster.next.next
+            lower = lower.next
+        return True
+
+
 if __name__ == '__main__':
     node = ListNode(0)
     node.next = node

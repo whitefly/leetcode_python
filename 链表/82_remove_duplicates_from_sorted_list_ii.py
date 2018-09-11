@@ -10,7 +10,7 @@ class Solution:
         """
         :type head: ListNode
         :rtype: ListNode
-        思入: 设置index的坑,后面可能会有重复的.需要保留上一个节点
+        思入: 设置index的坑(并且设置状态量),后面可能会有重复的.需要保留上一个节点.
         """
         begin = ListNode(999999)
         begin.next = head
