@@ -15,7 +15,7 @@ class Solution(object):
         在相遇后,重新设置一个index从x开始走(正常速度),那么走了a步后,一定会在y处相遇
 
         """
-        # 第一次相遇
+        # 第一次相遇,设置flag位,来区分出发时的相遇
         if not head or not head.next:
             return None
         lower = faster = head
