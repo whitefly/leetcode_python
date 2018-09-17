@@ -6,3 +6,5 @@
 .idea/workspace.xml
 venv/
 test/
+/other_package/
+/test2
