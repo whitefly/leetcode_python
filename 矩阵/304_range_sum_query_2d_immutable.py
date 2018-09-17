@@ -11,19 +11,10 @@ class NumMatrix:
         self.M = matrix
         self.m = len(matrix)
         self.n = len(matrix[0]) if self.m else 0
-        self.buf = [[0] * self.n for i in range(self.m)]
+        self.dp = [[0] * (self.n + 1) for i in range(self.m + 1)]
         for i in range(self.m):
             for j in range(self.n):
-                self.get_sum(i, j)
-
-    def get_sum(self, row, col):
-        # 只需要在(col-1,row)的基础上,加上 (col,0~row)即可
-
-        right = self.buf[row][col - 1] if col - 1 >= 0 else 0
-        up = self.buf[row - 1][col] if row - 1 >= 0 else 0
-        front = self.buf[row - 1][col - 1] if (row - 1 >= 0 and col - 1 >= 0) else 0
-
-        self.buf[row][col] = right + up - front + self.M[row][col]
+                self.dp[i][j] = self.dp[i][j - 1] + self.dp[i - 1][j] - self.dp[i - 1][j - 1] + self.M[i][j]
 
     def sumRegion(self, row1, col1, row2, col2):
         """
@@ -32,14 +23,16 @@ class NumMatrix:
         :type row2: int
         :type col2: int
         :rtype: int
-        思入:类似于之前写的数组环,用特定的值来组合成要求的值
+        思入:类似于之前写的数组环,用特定的值来组合成要求的值.
+        dp[i][j]表示(0,0)~(i,j)和. 然后组合公式为: 结果=s4 - (s2 + s3 - s1)
+        trick: 为了避免越界,在多加一列和一行在最后.防止dp[0][-1]报错
         """
         if self.n == 0:
             return None
-        s1 = self.buf[row1 - 1][col1 - 1] if row1 - 1 >= 0 and col1 - 1 >= 0 else 0
-        s2 = self.buf[row2][col1 - 1] if col1 - 1 >= 0 else 0
-        s3 = self.buf[row1 - 1][col2] if row1 - 1 >= 0 else 0
-        s4 = self.buf[row2][col2]
+        s1 = self.dp[row1 - 1][col1 - 1]
+        s2 = self.dp[row2][col1 - 1]
+        s3 = self.dp[row1 - 1][col2]
+        s4 = self.dp[row2][col2]
 
         return s4 - (s2 + s3 - s1)
 
