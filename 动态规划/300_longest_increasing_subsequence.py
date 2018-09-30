@@ -21,15 +21,25 @@ class Solution:
             result = max(result, dp[i])
         return result
 
-    def lengthOfLIS(self, nums):
+    def lengthOfLIS2(self, nums):
         """
-        思入2: 在思入1的基础上,在扫过之后,对前面只是一个搜索过程,而不用管顺序,需要可以在此时写一个二分搜索
+        思入2: 贪心+二分搜索
+        定义d[k]:长度为k的上升子序列的最末元素，若有多个长度为k的上升子序列，则记录最小的那个最末元素.
+        核心:维护一个递增的dp,二分搜索后可能出现替换
         :param nums:
         :return:
         """
+        import bisect
+        dp = [0] * (len(nums) + 1)
+        size = 0
+        for i, v in enumerate(nums):
+            index = bisect.bisect_left(dp, v, 1, size + 1)
+            size = size + 1 if index == size + 1 else size
+            dp[index] = v
+        return size
 
 
 if __name__ == '__main__':
     s = Solution()
     my_nums = [10, 9, 2, 5, 3, 7, 101, 18]
-    print(s.lengthOfLIS(my_nums))
+    print(s.lengthOfLIS2(my_nums))
