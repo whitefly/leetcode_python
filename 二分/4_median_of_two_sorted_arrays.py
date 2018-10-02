@@ -57,7 +57,7 @@ class Solution2:
         :param nums1:
         :param nums2:
         :return:
-        思入:顶一个findKth的函数,
+        思入:设定一个findKth的函数,
         复杂度: O((m+n)log(m+n))
         """
 
