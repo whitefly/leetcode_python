@@ -15,6 +15,19 @@ class Solution:
             if r and l:
                 return h
 
+    def hIndex2(self, citations: list):
+        """
+        :type citations: List[int]
+        :rtype: int
+        思想2: 在思想1的基础上,左边满足,则右边一定为会满足
+        """
+        citations.sort()
+        for cut in range(len(citations), -1, -1):
+            h = len(citations) - cut
+            l = all([i <= h for i in citations[:cut]])
+            if l:
+                return h
+
 
 if __name__ == '__main__':
     my_nums = []
