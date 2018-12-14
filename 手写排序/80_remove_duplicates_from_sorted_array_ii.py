@@ -18,6 +18,7 @@ class Solution:
             else:
                 if count == 1:
                     # 相同元素,之前只有1个才加
+
                     nums[index] = v
                     index += 1
                     count += 1

@@ -6,7 +6,7 @@ class Solution:
         思入1: 暴力排序 o(nlogn)
         带优化: 有木有线性的方法
         """
-        nums.sort()
+        nums.partition()
 
 
 class Solution1:

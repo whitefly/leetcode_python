@@ -5,7 +5,7 @@ class Solution:
         :type nums2: List[int]
         :rtype: float
         思想: 在数组1上任意切一刀作为左1和右1, 由于是中位数,数组2上的一刀是根据数组1的一刀切(原理:保证2个左边的数量 == 2个右边的数量.所以可以算出出来)
-        所以: 只要保证第一个数组上的一刀正确即可. 核心: 怎么保证这一刀是正确的? 所有的左边 <= 所有的右边 即  max(L1,L2)<=min(R1,R2).
+        所以: 只要保证第一个数组上的一刀位置正确即可. 核心: 怎么保证这一刀是正确的? 所有的左边 <= 所有的右边 即  max(L1,L2)<=min(R1,R2).
         一旦出现其他情况,就要大小来调整切的位置(二分)
         复杂度: 只在最小数组上进行二分--->O(log(min(m+n)))
         """
@@ -48,6 +48,7 @@ class Solution1:
         nums1 = nums1 + nums2  # type:list
         nums1.sort()
         median_i = len(nums1) // 2
+        # 奇数,偶数区别对待
         return (nums1[median_i - 1] + nums1[median_i]) / 2 if len(nums1) % 2 == 0 else nums1[median_i]
 
 

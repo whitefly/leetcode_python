@@ -5,6 +5,6 @@
 .idea/modules.xml
 .idea/workspace.xml
 venv/
-test/
-/other_package/
-/test2
+/Test
+.idea/dataSources.local.xml
+.idea/dataSources/
