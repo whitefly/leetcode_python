@@ -1,0 +1,2 @@
+db=mysql
+password=12345
