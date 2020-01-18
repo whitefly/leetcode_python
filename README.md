@@ -2,7 +2,7 @@
   LeetCode的Python刷题本, 不定时更新</br>
 
 
-记录题目数:110
+记录题目数:112
 
 
 | 题号 | 标题 | 题型 | 连接 |
@@ -27,7 +27,9 @@
 |17|letter combinations of a phone number|动态规划|[链接](./动态规划/17_letter_combinations_of_a_phone_number.py)|
 |18|4sum|双指针|[链接](./双指针/18_4sum.py)|
 |19|remove nth node from end of list|链表|[链接](./链表/19_remove_nth_node_from_end_of_list.py)|
+|20|valid parentheses|栈|[链接](./栈/20_valid_parentheses.py)|
 |21|merge two sorted lists|链表|[链接](./链表/21_merge_two_sorted_lists.py)|
+|22|generate parentheses|回溯剪枝|[链接](./回溯剪枝/22_generate_parentheses.py)|
 |23|merge k sorted lists|链表|[链接](./链表/23_merge_k_sorted_lists.py)|
 |24|swap nodes in pairs|链表|[链接](./链表/24_swap_nodes_in_pairs.py)|
 |26|remove duplicates from sorted array|手写排序|[链接](./手写排序/26_remove_duplicates_from_sorted_array.py)|
