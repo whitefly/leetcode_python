@@ -2,7 +2,7 @@
   LeetCode的Python刷题本, 不定时更新</br>
 
 
-记录题目数:105
+记录题目数:110
 
 
 | 题号 | 标题 | 题型 | 连接 |
@@ -14,13 +14,18 @@
 |4|median of two sorted arrays|二分|[链接](./二分/4_median_of_two_sorted_arrays.py)|
 |5|longest palindromic substring|动态规划|[链接](./动态规划/5_longest_palindromic_substring.py)|
 |6|zigzag conversion|排版题|[链接](./排版题/6_zigzag_conversion.py)|
+|7|reverse integer|字符串|[链接](./字符串/7_reverse_integer.py)|
 |8|string to integer atoi|字符串|[链接](./字符串/8_string_to_integer_atoi.py)|
+|9|palindrome number|字符串|[链接](./字符串/9_palindrome_number.py)|
+|10|regular expression matching|有限状态机|[链接](./有限状态机/10_regular_expression_matching.py)|
 |11|container with most water|双指针|[链接](./双指针/11_container_with_most_water.py)|
 |12|integer to roman|字符串|[链接](./字符串/12_integer_to_roman.py)|
+|13|roman to integer|字符串|[链接](./字符串/13_roman_to_integer.py)|
 |14|longest common prefix|字符串|[链接](./字符串/14_longest_common_prefix.py)|
 |15|3Sum|哈希|[链接](./哈希/15_3Sum.py)|
 |16|3sum closest|双指针|[链接](./双指针/16_3sum_closest.py)|
 |17|letter combinations of a phone number|动态规划|[链接](./动态规划/17_letter_combinations_of_a_phone_number.py)|
+|18|4sum|双指针|[链接](./双指针/18_4sum.py)|
 |19|remove nth node from end of list|链表|[链接](./链表/19_remove_nth_node_from_end_of_list.py)|
 |21|merge two sorted lists|链表|[链接](./链表/21_merge_two_sorted_lists.py)|
 |23|merge k sorted lists|链表|[链接](./链表/23_merge_k_sorted_lists.py)|
