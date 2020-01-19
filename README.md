@@ -2,7 +2,7 @@
   LeetCode的Python刷题本, 不定时更新</br>
 
 
-记录题目数:112
+记录题目数:120
 
 
 | 题号 | 标题 | 题型 | 连接 |
@@ -32,17 +32,25 @@
 |22|generate parentheses|回溯剪枝|[链接](./回溯剪枝/22_generate_parentheses.py)|
 |23|merge k sorted lists|链表|[链接](./链表/23_merge_k_sorted_lists.py)|
 |24|swap nodes in pairs|链表|[链接](./链表/24_swap_nodes_in_pairs.py)|
+|25|reverse nodes in k group|链表|[链接](./链表/25_reverse_nodes_in_k_group.py)|
 |26|remove duplicates from sorted array|手写排序|[链接](./手写排序/26_remove_duplicates_from_sorted_array.py)|
+|27|remove element|双指针|[链接](./双指针/27_remove_element.py)|
 |28|implement strst|字符串|[链接](./字符串/28_implement_strst.py)|
 |29|divide two integers|数学|[链接](./数学/29_divide_two_integers.py)|
 |31|next permutation|数组|[链接](./数组/31_next_permutation.py)|
 |33|search in rotated sorted array|二分|[链接](./二分/33_search_in_rotated_sorted_array.py)|
 |34|find first and last position of element in sorted array|二分|[链接](./二分/34_find_first_and_last_position_of_element_in_sorted_array.py)|
+|35|search insert position|二分|[链接](./二分/35_search_insert_position.py)|
 |36|valid sudoku|哈希|[链接](./哈希/36_valid_sudoku.py)|
+|37|sudoku solver|回溯剪枝|[链接](./回溯剪枝/37_sudoku_solver.py)|
 |38|count and say|数学|[链接](./数学/38_count_and_say.py)|
+|39|combination sum|背包|[链接](./背包/39_combination_sum.py)|
+|40|combination sum ii|背包|[链接](./背包/40_combination_sum_ii.py)|
 |42|trapping rain water|动态规划|[链接](./动态规划/42_trapping_rain_water.py)|
 |43|multiply strings|数学|[链接](./数学/43_multiply_strings.py)|
 |45|jump game ii|动态规划|[链接](./动态规划/45_jump_game_ii.py)|
+|46|permutations|排列组合|[链接](./排列组合/46_permutations.py)|
+|47|permutations ii|排列组合|[链接](./排列组合/47_permutations_ii.py)|
 |49|group anagrams|哈希|[链接](./哈希/49_group_anagrams.py)|
 |50|powx n|二分|[链接](./二分/50_powx_n.py)|
 |54|spiral matrix|递归|[链接](./递归/54_spiral_matrix.py)|
