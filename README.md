@@ -2,7 +2,7 @@
   LeetCode的Python刷题本, 不定时更新</br>
 
 
-记录题目数:120
+记录题目数:122
 
 
 | 题号 | 标题 | 题型 | 连接 |
@@ -113,6 +113,7 @@
 |274|h index|手写排序|[链接](./手写排序/274_h_index.py)|
 |275|h index ii|二分|[链接](./二分/275_h_index_ii.py)|
 |278|first bad version|二分|[链接](./二分/278_first_bad_version.py)|
+|297|serialize and deserialize binary tree|树|[链接](./树/297_serialize_and_deserialize_binary_tree.py)|
 |300|longest increasing subsequence|动态规划|[链接](./动态规划/300_longest_increasing_subsequence.py)|
 |303|range sum query immutable|动态规划|[链接](./动态规划/303_range_sum_query_immutable.py)|
 |304|range sum query 2d immutable|矩阵|[链接](./矩阵/304_range_sum_query_2d_immutable.py)|
@@ -124,6 +125,7 @@
 |390|elimination game|数学|[链接](./数学/390_elimination_game.py)|
 |496|next greater element i|栈|[链接](./栈/496_next_greater_element_i.py)|
 |542|01 matrix|动态规划|[链接](./动态规划/542_01_matrix.py)|
+|655|print binary tree|树|[链接](./树/655_print_binary_tree.py)|
 |669|trim a binary search tree|树|[链接](./树/669_trim_a_binary_search_tree.py)|
 |743|network delay time|图|[链接](./图/743_network_delay_time.py)|
 |852|peak index in a mountain array|二分|[链接](./二分/852_peak_index_in_a_mountain_array.py)|
