@@ -2,7 +2,7 @@
   LeetCode的Python刷题本, 不定时更新</br>
 
 
-记录题目数:122
+记录题目数:125
 
 
 | 题号 | 标题 | 题型 | 连接 |
@@ -123,8 +123,11 @@
 |374|guess number higher or lower|二分|[链接](./二分/374_guess_number_higher_or_lower.py)|
 |388|longest absolute file path|哈希|[链接](./哈希/388_longest_absolute_file_path.py)|
 |390|elimination game|数学|[链接](./数学/390_elimination_game.py)|
+|447|number of boomerangs|哈希|[链接](./哈希/447_number_of_boomerangs.py)|
 |496|next greater element i|栈|[链接](./栈/496_next_greater_element_i.py)|
+|520|detect capital|字符串|[链接](./字符串/520_detect_capital.py)|
 |542|01 matrix|动态规划|[链接](./动态规划/542_01_matrix.py)|
+|652|find duplicate subtrees|树|[链接](./树/652_find_duplicate_subtrees.py)|
 |655|print binary tree|树|[链接](./树/655_print_binary_tree.py)|
 |669|trim a binary search tree|树|[链接](./树/669_trim_a_binary_search_tree.py)|
 |743|network delay time|图|[链接](./图/743_network_delay_time.py)|
