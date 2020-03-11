@@ -2,7 +2,7 @@
   LeetCode的Python刷题本, 不定时更新</br>
 
 
-记录题目数:125
+记录题目数:135
 
 
 | 题号 | 标题 | 题型 | 连接 |
@@ -80,6 +80,9 @@
 |95|unique binary search trees ii|树|[链接](./树/95_unique_binary_search_trees_ii.py)|
 |96|unique binary search trees|树|[链接](./树/96_unique_binary_search_trees.py)|
 |98|validate binary search tree|树|[链接](./树/98_validate_binary_search_tree.py)|
+|100|same tree|树|[链接](./树/100_same_tree.py)|
+|101|symmetric tree|树|[链接](./树/101_symmetric_tree.py)|
+|102|binary tree level order traversal|树|[链接](./树/102_binary_tree_level_order_traversal.py)|
 |121|best time to buy and sell stock|动态规划|[链接](./动态规划/121_best_time_to_buy_and_sell_stock.py)|
 |122|best time to buy and sell stock|动态规划|[链接](./动态规划/122_best_time_to_buy_and_sell_stock.py)|
 |123|best time to buy and sell stock iii|动态规划|[链接](./动态规划/123_best_time_to_buy_and_sell_stock_iii.py)|
@@ -102,6 +105,7 @@
 |169|majority element|数组|[链接](./数组/169_majority_element.py)|
 |179|largest number|手写排序|[链接](./手写排序/179_largest_number.py)|
 |187|repeated dna sequences|哈希|[链接](./哈希/187_repeated_dna_sequences.py)|
+|188|best time to buy and sell stock iv|动态规划|[链接](./动态规划/188_best_time_to_buy_and_sell_stock_iv.py)|
 |190|reverse bits|位运算|[链接](./位运算/190_reverse_bits.py)|
 |191|number of 1 bits|位运算|[链接](./位运算/191_number_of_1_bits.py)|
 |201|bitwise and of numbers range|位运算|[链接](./位运算/201_bitwise_and_of_numbers_range.py)|
@@ -113,22 +117,28 @@
 |274|h index|手写排序|[链接](./手写排序/274_h_index.py)|
 |275|h index ii|二分|[链接](./二分/275_h_index_ii.py)|
 |278|first bad version|二分|[链接](./二分/278_first_bad_version.py)|
+|287|find the duplicate number|双指针|[链接](./双指针/287_find_the_duplicate_number.py)|
 |297|serialize and deserialize binary tree|树|[链接](./树/297_serialize_and_deserialize_binary_tree.py)|
 |300|longest increasing subsequence|动态规划|[链接](./动态规划/300_longest_increasing_subsequence.py)|
 |303|range sum query immutable|动态规划|[链接](./动态规划/303_range_sum_query_immutable.py)|
 |304|range sum query 2d immutable|矩阵|[链接](./矩阵/304_range_sum_query_2d_immutable.py)|
 |306|additive number|深度搜索和广度搜索|[链接](./深度搜索和广度搜索/306_additive_number.py)|
 |307|range sum query mutable|动态规划|[链接](./动态规划/307_range_sum_query_mutable.py)|
+|309|best time to buy and sell stock with cooldown|动态规划|[链接](./动态规划/309_best_time_to_buy_and_sell_stock_with_cooldown.py)|
 |350|intersection of two arrays ii|哈希|[链接](./哈希/350_intersection_of_two_arrays_ii.py)|
 |374|guess number higher or lower|二分|[链接](./二分/374_guess_number_higher_or_lower.py)|
 |388|longest absolute file path|哈希|[链接](./哈希/388_longest_absolute_file_path.py)|
 |390|elimination game|数学|[链接](./数学/390_elimination_game.py)|
+|394|decode string|栈|[链接](./栈/394_decode_string.py)|
 |447|number of boomerangs|哈希|[链接](./哈希/447_number_of_boomerangs.py)|
 |496|next greater element i|栈|[链接](./栈/496_next_greater_element_i.py)|
 |520|detect capital|字符串|[链接](./字符串/520_detect_capital.py)|
 |542|01 matrix|动态规划|[链接](./动态规划/542_01_matrix.py)|
+|543|diameter of binary tree|树|[链接](./树/543_diameter_of_binary_tree.py)|
 |652|find duplicate subtrees|树|[链接](./树/652_find_duplicate_subtrees.py)|
 |655|print binary tree|树|[链接](./树/655_print_binary_tree.py)|
 |669|trim a binary search tree|树|[链接](./树/669_trim_a_binary_search_tree.py)|
 |743|network delay time|图|[链接](./图/743_network_delay_time.py)|
 |852|peak index in a mountain array|二分|[链接](./二分/852_peak_index_in_a_mountain_array.py)|
+|865|smallest subtree with all the deepest nodes|树|[链接](./树/865_smallest_subtree_with_all_the_deepest_nodes.py)|
+|1013|partition array into three parts with equal sum|双指针|[链接](./双指针/1013_partition_array_into_three_parts_with_equal_sum.py)|

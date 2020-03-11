@@ -22,8 +22,18 @@ class Solution:
 
         return result
 
+    def maxProfit2(self, prices):
+        # 动态规划法 dp[n][s]表示 第n天结束时,处于s状态(0非持有,1持有)的最大收益
+        unhold, hold = 0, -100000
+        for price in prices:
+            new_hold = max(hold, unhold - price)
+            new_unhold = max(unhold, hold + price)
+            hold, unhold = new_hold, new_unhold
+        return unhold
+
 
 if __name__ == '__main__':
     my_nums = [7, 6, 4, 3, 1]
     s = Solution()
     print(s.maxProfit(my_nums))
+    print(s.maxProfit2(my_nums))

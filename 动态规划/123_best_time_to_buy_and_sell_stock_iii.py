@@ -23,8 +23,24 @@ class Solution:
             result = max(result, max_num - num)
         return result
 
+    def maxProfit2(self, prices):
+        # 思入: dp[n][s][k]表示 第n天结束时,处于s状态(0非持有,1持有),还剩下k次交易次数(只有卖出才表示交易一次) 的最大收益
+        # 由于只与前一天有关系,所以天数那一维可以去掉
+        count = 2
+        dp = [[0] * (count + 1) for _ in range(2)]
+        temp = dp.copy()
+        dp[1] = [-100000] * (count + 1)
+        for price in prices:
+            for k in range(count + 1):
+                temp[0][k] = max(dp[0][k], -100000 if k == count else dp[1][k + 1] + price)
+                temp[1][k] = max(dp[1][k], dp[0][k] - price)
+            temp, dp = dp, temp
+        return max(dp[0])
+
 
 if __name__ == '__main__':
     s = Solution()
     myNums = [7, 6, 4]
-    print(s.maxProfit(myNums))
+    myNums2 = [7,6,4,3,1]
+    print(s.maxProfit(myNums2))
+    print(s.maxProfit2(myNums2))
